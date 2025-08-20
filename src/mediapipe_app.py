@@ -10,6 +10,7 @@ LEFT_OUTLINE  = [33, 7, 163, 144, 145, 153, 154, 155, 133, 173, 157, 158, 159, 1
 RIGHT_OUTLINE = [362, 382, 381, 380, 374, 373, 390, 249, 263, 466, 388, 387, 386, 385, 384, 398]
 IRIS = [468, 469, 470, 471, 472]  # shared iris landmarks (center ring)
 
+
 def EAR(pts):
     # pts: (6,2) array in order above
     A = np.linalg.norm(pts[1]-pts[5])
