@@ -1,0 +1,6 @@
+Ctrl + C in the terminal to interrupt.
+
+python src/mediapipe_app.py
+
+Ctrl + J to open terminal in VS Code.
+
