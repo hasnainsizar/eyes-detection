@@ -37,8 +37,8 @@ while True:
         fps = frames / (now - last)
         frames, last = 0, now
 
-    cv2.putText(frame, f"YOLO Face FPS: {fps:.1f}", (10,30),
-                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,255,0), 2)
+    cv2.putText(frame, f"YOLO Face FPS: {fps:.1f}", (10,60),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255,255,0), 2)
     cv2.imshow("YOLO Face Benchmark (ESC to exit)", frame)
     if cv2.waitKey(1) & 0xFF == 27: break
 

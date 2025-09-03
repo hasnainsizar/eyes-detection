@@ -4,3 +4,54 @@ python src/mediapipe_app.py
 
 Ctrl + J to open terminal in VS Code.
 
+python src/record_clips.py \
+  --subject_id S003 \
+  --fatigue drowsy \
+  --attention on_screen \
+  --glasses none \
+  --lighting normal \
+  --duration 30 \
+  --append_metadata data/metadata.csv
+
+
+
+Core Factors for Your Dataset
+1. Fatigue / Vigilance State
+
+alert → normal attentive state
+
+mildly_drowsy → slower blinks, relaxed eyelids, some gaze wandering
+
+drowsy → long blinks, partial/closed eyes, nodding head
+
+2. Attention / Task State
+
+on_screen → looking at MacBook screen / camera
+
+distracted → looking away (side, phone, background)
+
+3. Glasses
+
+none → no glasses
+
+clear → clear prescription/blue-light glasses
+
+tinted → sunglasses or lightly tinted lenses
+
+4. Lighting Conditions
+
+bright → well-lit, daylight or strong lamp
+
+normal → typical indoor lighting
+
+dim → low-light room
+
+backlit → strong light source behind you (window, lamp)
+
+5. Environment (optional, if feasible)
+
+indoor (default, desk setup)
+
+outdoor (sunlight, natural light variability)
+
+in_vehicle (parked car, for driver monitoring relevance)
